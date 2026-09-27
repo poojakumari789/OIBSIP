@@ -392,4 +392,150 @@ a {
     line-height: 1.05;
     margin-bottom: 20px;
 }
+.contact h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(42px, 6vw, 70px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
 
+.contact-content > p:not(.contact-label) {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #252525;
+    color: #F8F6F1;
+
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    gap: 22px;
+}
+
+.social-links a:hover {
+    color: #C76B4A;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 330px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    .navbar nav {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .profile-placeholder {
+        width: 260px;
+        height: 320px;
+    }
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        min-height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
