@@ -1,0 +1,395 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #F8F6F1;
+    color: #252525;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 8%;
+
+    background: #F8F6F1;
+    border-bottom: 1px solid #D9C7B8;
+}
+
+.logo {
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    color: #C76B4A;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #C76B4A;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.section {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-heading p,
+.contact-label {
+    color: #C76B4A;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+
+    padding: 90px 8%;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.intro {
+    color: #C76B4A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(60px, 9vw, 110px);
+    font-weight: 400;
+    line-height: 0.95;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 560px;
+    font-size: 18px;
+    color: #55504B;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+
+    background: #C76B4A;
+    color: #F8F6F1;
+
+    border: 1px solid #C76B4A;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #252525;
+    border-color: #252525;
+}
+
+.text-link {
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #252525;
+    padding-bottom: 3px;
+}
+
+.text-link:hover {
+    color: #C76B4A;
+    border-color: #C76B4A;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.profile-placeholder {
+    width: 330px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #D9C7B8;
+
+    border-radius: 165px 165px 10px 10px;
+
+    border: 8px solid #F8F6F1;
+    outline: 1px solid #C76B4A;
+}
+
+.profile-placeholder span {
+    font-family: "DM Serif Display", serif;
+    font-size: 70px;
+    color: #C76B4A;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+
+    background: #D9C7B8;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-content p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    background: #F8F6F1;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #D9C7B8;
+    border-left: 1px solid #D9C7B8;
+}
+
+.skill {
+    padding: 30px;
+    min-height: 190px;
+
+    border-right: 1px solid #D9C7B8;
+    border-bottom: 1px solid #D9C7B8;
+
+    transition: 0.3s ease;
+}
+
+.skill:hover {
+    background: #D9C7B8;
+}
+
+.skill span {
+    color: #C76B4A;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.skill h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 18px 0 8px;
+}
+
+.skill p {
+    font-size: 14px;
+    color: #55504B;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    background: #252525;
+    color: #F8F6F1;
+}
+
+.projects .section-heading p {
+    color: #C76B4A;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    padding: 32px;
+    min-height: 390px;
+
+    border: 1px solid #55504B;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #C76B4A;
+    transform: translateY(-5px);
+}
+
+.project-number {
+    color: #C76B4A;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-card h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 25px 0 15px;
+}
+
+.project-card p {
+    color: #D9C7B8;
+    font-size: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+.project-tech span {
+    padding: 5px 10px;
+
+    border: 1px solid #D9C7B8;
+    border-radius: 20px;
+
+    color: #D9C7B8;
+    font-size: 12px;
+}
+
+.project-link {
+    display: inline-block;
+    width: fit-content;
+
+    margin-top: 22px;
+
+    color: #C76B4A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    color: #D9C7B8;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    background: #D9C7B8;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(42px, 6vw, 70px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
