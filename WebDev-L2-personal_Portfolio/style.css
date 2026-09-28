@@ -539,3 +539,22 @@ footer {
         text-align: center;
     }
 }
+/* Scroll reveal animation */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Active navigation */
+
+.navbar nav a.active {
+    color: #C76B4A;
+}
