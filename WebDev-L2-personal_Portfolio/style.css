@@ -483,3 +483,169 @@ nav a.active::after {
         gap: 18px;
     }
 }
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.page-header {
+    padding: 100px 0 75px;
+    background: #F8F6F1;
+    border-bottom: 1px solid #D9C7B8;
+}
+
+.page-header h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(52px, 7vw, 78px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin: 15px 0 22px;
+}
+
+.page-intro {
+    max-width: 600px;
+    color: #5D5A56;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* About content */
+
+.about-content {
+    padding: 90px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 75px;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: #5D5A56;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-details {
+    border-top: 1px solid #CBB6A5;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 20px 0;
+    border-bottom: 1px solid #CBB6A5;
+}
+
+.detail-item span {
+    color: #C76B4A;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.detail-item strong {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* My approach */
+
+.about-approach {
+    padding: 85px 0 100px;
+    background: #EFE8DF;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.approach-card {
+    padding: 30px 25px;
+    background: #F8F6F1;
+    border: 1px solid #D9C7B8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(37, 37, 37, 0.08);
+}
+
+.approach-card span {
+    color: #C76B4A;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.approach-card h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin: 18px 0 12px;
+}
+
+.approach-card p {
+    color: #5D5A56;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* About responsive design */
+
+@media (max-width: 850px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-header {
+        padding: 70px 0 55px;
+    }
+
+    .page-header h1 {
+        font-size: 52px;
+    }
+
+    .page-intro {
+        font-size: 15px;
+    }
+
+    .about-content {
+        padding: 65px 0;
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-approach {
+        padding: 65px 0;
+    }
+}
