@@ -245,3 +245,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 });
+
+/* Projects Animation */
+
+if (typeof gsap !== "undefined") {
+
+  gsap.from(".projects-heading > *", {
+    y: 25,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.12,
+    ease: "power2.out"
+  });
+
+  gsap.from(".project-card", {
+    y: 35,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.15,
+    delay: 0.2,
+    ease: "power2.out"
+  });
+
+}
