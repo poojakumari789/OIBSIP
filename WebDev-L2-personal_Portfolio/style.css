@@ -1257,5 +1257,20 @@ nav a.active::after {
     cursor: pointer;
     width: fit-content;
 }
+/* Mobile */
+@media (max-width: 700px) {
 
+    .contact-page {
+        padding: 50px 6%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-info {
+        padding: 25px;
+    }
+}
 
