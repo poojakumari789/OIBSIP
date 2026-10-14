@@ -1045,9 +1045,11 @@ nav a.active::after {
 .project-image {
     width: 100%;
     height: 160px;
-    padding: 8px;
-    margin-bottom: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+    /* margin-bottom: 0;
+    box-sizing: border-box; */
 
     display: flex;
     align-items: center;
@@ -1061,7 +1063,7 @@ nav a.active::after {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     display: block;
     transition: transform 0.5s ease;
@@ -1138,7 +1140,7 @@ nav a.active::after {
   }
 
   .project-image {
-    height:140px;
+    height:200px;
   }
 
   .project-info {
